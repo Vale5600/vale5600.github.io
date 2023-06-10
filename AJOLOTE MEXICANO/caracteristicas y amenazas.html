@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> menu lateral dinamico </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </div>   
+
+            <img src="imagenes/logo.jpg" width="120" alt="logo">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="origen.html">Origen</a></li>
+                <li><a href="caracteristicas y amenazas.html">Caracteristicas y amenazas</a></li>
+                <li><a href="defensa.html">Defensa</a></li>
+                <li><a href="riesgos de la fama.html">Riesgo de la fama</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>ajolote mexicano</h2>
+            <h3>caracteristicas y amenazas</h3>
+            <img src="imagenes/ajolote4.jpeg" alt="100px">
+            <br>
+            <p>El axolote, pariente cercano de la salamandra tigre, puede ser bastante grande y alcanza longitudes de hasta 30 centímetros, 
+                aunque su tamaño medio es de 15 cm. El axolote suele ser negro o marrón moteado, 
+                aunque también son relativamente comunes las variedades albinas y blancas, especialmente entre especímenes criados en cautividad.</p>
+            <br>
+            <p>El axolote es longevo, alcanza hasta 15 años de edad alimentándose de moluscos, gusanos, larvas de insectos, crustáceos y algún pez. 
+                Esta especie, acostumbrada al papel de predador en su hábitat, ha empezado a padecer la introducción de grandes peces en su hábitat lacustre. 
+                Entre las amenazas naturales se cuentan las aves de presa como las garzas.</p>
+            <br>
+            <p>Su población está en declive, ya que la demanda de la cercana ciudad de México ha llevado a drenar y contaminar buena parte de las aguas del complejo lacustre de Xochimilco. 
+                También es muy común utilizarlo en el comercio de acuarios y el axolote asado se considera un manjar en México, lo que ha llevado a que su número se reduzca aun más.</p>
+            <br>
+                <button>Mostrar Menu</button>
+        </div>
+
+    </section>
+            
+        <!-- JS jQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+
+            //Mostrar Sidebar
+            $("button").on('click', function(){
+                $(".container").toggleClass("show");
+            });
+
+            $(".side-hide").on('click', function(){
+                $(".container").toggleClass("show");
+
+            })
+
+        </script>
+    </body>
+</html>
+
